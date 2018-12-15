@@ -1,9 +1,10 @@
 <template>
   <div>
     <mt-swipe :auto="4000">
-      <mt-swipe-item>1</mt-swipe-item>
-      <mt-swipe-item>2</mt-swipe-item>
-      <mt-swipe-item>3</mt-swipe-item>
+      
+      <mt-swipe-item v-for="(item, index) in lunbotuLIst" :key="index">
+        <img :src="item.img" alt="">
+      </mt-swipe-item>
     </mt-swipe>
     <h1>首页</h1>
     <ul class="mui-table-view mui-grid-view mui-grid-9">
@@ -61,8 +62,7 @@
         this.$http.get('api/getlunbo')
           .then(result => {
             if (result.body.status === 0) {
-              console.log(result)
-
+             this.lunbotuLIst = result.body.message
             } else {
 
             }
@@ -90,7 +90,7 @@
 
       img {
         width: 100%;
-        height: 1005;
+        height: 100%;
       }
     }
   }

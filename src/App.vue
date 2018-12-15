@@ -1,6 +1,6 @@
 <template>
   <div class="app-container">
-    <mt-header fixed title="黑马程序员·Vue项目"></mt-header>
+    <mt-header fixed title="Vue个人项目"></mt-header>
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- zhongjian -->
     <transition>
@@ -39,7 +39,11 @@
 
   .app-container {
     padding-top: 40px;
+    padding-bottom: 50px;
     overflow-x: hidden;
+  }
+  .mint-header{
+    background: #f40 !important;  
   }
 
   .v-enter{
@@ -57,5 +61,8 @@
   }
     .v-leave-active{
     transition: all .2s ease;
+    }
+    .mui-bar-tab .mui-tab-item.mui-active{
+      color: #f40 !important;
     }
 </style>
