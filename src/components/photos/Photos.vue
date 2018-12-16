@@ -97,7 +97,7 @@
     }
 
     .info {
-      color: white;
+      color: #fff;
       text-align: left;
       position: absolute;
       bottom: 0;
@@ -111,6 +111,7 @@
 
       .info-body {
         font-size: 13px;
+        color: #fff;
       }
     }
   }

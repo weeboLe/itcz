@@ -8,6 +8,7 @@ import list from './components/news/NewsListvue.vue'
 import info from './components/news/NewsInfo.vue'
 import photos from './components/photos/Photos.vue'
 import photoinfo from './components/photos/photoinfo.vue'
+import goodslist from './components/goods/GoodsList.vue'
 // 3. 创建路由对象
 var router = new VueRouter({
   routes: [
@@ -19,7 +20,8 @@ var router = new VueRouter({
     {path: '/home/list', component: list},
     {path: '/home/info/:id', component: info},
     {path: '/home/photos', component: photos},
-    {path: '/home/photoinfo/:id', component: photoinfo}
+    {path: '/home/photoinfo/:id', component: photoinfo},
+    {path: '/home/goodslist', component: goodslist},
 
     
     
