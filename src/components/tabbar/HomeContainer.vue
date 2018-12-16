@@ -1,7 +1,6 @@
 <template>
   <div>
     <mt-swipe :auto="4000">
-      
       <mt-swipe-item v-for="(item, index) in lunbotuLIst" :key="index">
         <img :src="item.img" alt="">
       </mt-swipe-item>
@@ -15,7 +14,7 @@
         </router-link>
       </li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-        <router-link to="/">
+        <router-link to="/home/photos">
           <img src="../../images/menu6.png" alt="">
           <div class="mui-media-body">图片共享</div>
         </router-link>
