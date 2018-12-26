@@ -15,7 +15,7 @@ import router from './router'
 //  导入vuex 
 import store from './store'
 //  导入 MUI 的样式
-import '../node_modules/mui/css/mui.css'
+import './lib/mui/css/mui.css'
 //  导入 MUI 的扩展字体
 import './lib/mui/css/icons-extra.css'
 //  导入vue-preview
